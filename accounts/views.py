@@ -39,7 +39,7 @@ def register(request):
             messages.error(request, 'Passwords do not match')
             return redirect('register')
     else:
-        return render(request, 'accounts/register.html')
+        return render(request, 'signup.html')
 
 
 def login(request):
@@ -66,7 +66,7 @@ def login(request):
             messages.error(request, 'Invalid credentials')
             return redirect('login')
     else:
-        return render(request, 'accounts/login.html')
+        return render(request, 'login.html')
 
 
 def logout(request):
